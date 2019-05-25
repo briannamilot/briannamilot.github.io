@@ -478,10 +478,13 @@ h6 {
   margin-right: 5px;
   margin-bottom: 5px;
   width: 100px;
+  border: none;
+  outline: none;
 }
 
 .link-box:hover, .link-box:active {
   background-color: red;
+  border: none;
 }
 
 .contact-logo {
@@ -523,7 +526,6 @@ h6 {
 }
 
 #menu {
-  display: none;
   position: fixed;
   right: 0px;
   top: 0px;

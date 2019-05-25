@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Nathan Milot</title>
+  <title>Brianna Milot</title>
   <meta name="description" content="A sample landing page - free for all to use.">
   <meta name="HandheldFriendly" content="true">
   <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
   <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
   <script src="js/script.js"></script>
   <link rel="icon" type="image/png" href="/images/icon.png" />
 </head>
 <body>
   <button class="link-box" onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-  <button class="link-box" onclick="showMenuFunction()" id="menuBtn" title="Open the menu">Menu</button>
-  <section id="menu">
+  <!-- <button class="link-box" data-toggle="collapse" data-target="#menu" id="menuBtn" title="Open the menu">Menu</button> -->
+  <section id="menu" class="collapse">
     <div class="contained" style="color: white;  ">
-      <a class="link-box" href="https://nathanmilot.github.io">Home</a>
+      <a class="link-box" href="https://briannamilot.com">Home</a>
       <p style="text-align: center;">Sections</p>
       <a class="link-box" href="#about">About Me</a>
       <a class="link-box" href="#projects">Projects</a>
@@ -29,47 +32,76 @@
     <div class="contained">
     </div>
   </section>
+
+  <button class="link-box" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapse1 collapse2 collapse3">Expand All</button>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Collapsible Group Item #1
+          </button>
+        </h5>
+      </div>
+      <div id="collapseOne" class="collapse multi-collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Collapsible Group Item #2
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse multi-collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse multi-collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  </div>
+
+
   <section id="about" class="bgcol1 border-top border-bottom">
     <div class="contained hero">
       <h2 class="fw-light fc-b">My name is</h2>
-      <h1 class="fw-semi-heavy fc-w">Nathan Milot</h1>
+      <h1 class="fw-semi-heavy fc-w">Brianna Milot</h1>
       <h2 class="fw-light fc-b" style="font-size: 20pt;">
-        I am a Computer Science Student and TA at the University of Utah</br>and a two time intern at Google<br>
+        Bio Line 1</br>Bio Line 2<br>
        </h2>
     </div>
   </section>
   <section class="bgcol2 border-bottom">
     <div class="contained">
       <h3 class="fc-w">About me:</h3>
+      <div class="collapse multi-collapse" id="collapseOne">
+        <p class="fc-w">
+          About Me
+        </p>
 
-      <p class="fc-w">
-        My journey to computer science has been a unique one.
-        I started programming without really knowing that I was, on my TI-84 calculator in middle school because I was bored.
-        I did not think of programming as a possible career until much later.
-        I was working as an accountant’s assistant and taught myself VBA to automate most of my work.
-        I learned so much from that experience, like how to learn code on my own, and that I hated accounting but loved programming.
-        I went on to take an intro Java class at school and knew computer science was what I wanted to do.
-        I have tried to learn as much as I could from my programming classes in school, and to apply the things I learned to personal projects.
-        I have also tried to gain exposure to the field by attending every tech talk and computer science related event that I could.
-        These things have taught me a lot, and shown me that I still have a lot to learn.
-      </p>
-
-      <p class="fc-w">
-        I have spent a lot of time trying to figure out what I want to do with my life.
-        In high school I was passionate about theater, singing, art, and at the same time, calculus and physics.
-        When I started college I decided to study mechanical engineering so I could build and create.
-        After a year of that I switched to machining so I could work with my hands.
-        I then took two years off and traveled to a small island about 500 miles from Madagascar, called La Réunion.
-        There I learned to speak French and Réunionais Créole while I served and interacted with the people.
-        When I returned home, I still felt directionless.
-        I wanted to continue to help and interact with people so I planned to go into psychology.
-        I then changed my mind and went into accounting for a time which led me to computer science.
-        So here I am. I’ve been to the other side of the world, climbed a volcano, interned twice at Google, sang in front of large audiences, hiked a few hundred miles on the Appalachian trail, learned some languages, and fell in love.
-        Life has been pretty good.
-        <br>
-      </p>
-
+        <p class="fc-w">
+          More About Me
+        </p>
       </div>
+    </div>
   </section>
 
   <section id="projects" class="bgcol4 border-bottom" style="background-color:#CC0000;">

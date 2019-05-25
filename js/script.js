@@ -51,7 +51,7 @@ function resizeResume(){
 
 window.onscroll = function() {
   scrollFunction();
-  $("#menu").hide(500);
+  $("#menu").collapse();
 };
 window.addEventListener('click', hideMenuFunction);
 
@@ -70,11 +70,11 @@ function topFunction() {
 };
 
 function showMenuFunction() {
-  $("#menu").show(500);
+  //$("#menu").show(500);
 };
 
-function hideMenuFunction(event) {
-  if (!event.target.matches('#menuBtn')) {
-    $("#menu").hide(500);
-  }
-};
+// function hideMenuFunction(event) {
+//   if (!event.target.matches('#menuBtn')) {
+//     $("#menu").collapse();
+//   }
+// };
