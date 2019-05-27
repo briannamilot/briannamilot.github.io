@@ -51,7 +51,7 @@ function resizeResume(){
 
 window.onscroll = function() {
   scrollFunction();
-  $("#menu").collapse();
+  $("#menu").collapse('hide');
 };
 window.addEventListener('click', hideMenuFunction);
 
@@ -70,11 +70,26 @@ function topFunction() {
 };
 
 function showMenuFunction() {
-  //$("#menu").show(500);
+  $("#menu").collapse('show');
 };
 
-// function hideMenuFunction(event) {
-//   if (!event.target.matches('#menuBtn')) {
-//     $("#menu").collapse();
-//   }
-// };
+function hideMenuFunction(event) {
+  if (!event.target.matches('#menuBtn')) {
+    $("#menu").collapse('hide');
+  }
+};
+
+function expandAllCollapsed() {
+  changeAllCollapsed('show');
+}
+
+function hideAllCollapsed() {
+  changeAllCollapsed('hide');
+}
+
+function changeAllCollapsed(action) {
+  $("#collapseOne").collapse(action);
+  $("#collapseTwo").collapse(action);
+  $("#collapseThree").collapse(action);
+  $("#collapseAbout").collapse(action);
+}

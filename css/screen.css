@@ -535,3 +535,30 @@ h6 {
   z-index: 10000;
   border-left: solid white 1px;
 }
+
+.collapse_btns_div {
+  padding: 5px;
+}
+
+.collapse_btn {
+  /* box-shadow: white 0px 0px 2px 2px; */
+  position: relative;
+  margin: 5px;
+
+}
+
+/* .collapse_btn:hover {
+  top: 2px;
+} */
+
+.collapsing.width {
+    width: 0;
+    height: auto;
+    transition-property: width;
+  }
+
+  .collapse_header {
+    color: white !important;
+    font-size: x-large !important;
+    font-weight: bold !important;
+  }
