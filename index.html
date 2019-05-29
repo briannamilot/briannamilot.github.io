@@ -15,28 +15,30 @@
 <link rel="icon" type="image/png" href="/images/icon.png" />
 </head>
 <body>
-  <button class="link-box" onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-  <button class="link-box" data-toggle="collapse" data-target="#menu" id="menuBtn" title="Open the menu">Menu</button>
+  <button class="custom-button" onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
   <section id="menu" class="collapse width">
     <div class="contained" style="color: white;  ">
-      <a class="link-box" href="https://briannamilot.com">Home</a>
+      <button class="custom-button" onclick="topFunction()">Home</button>
       <p style="text-align: center;">Sections</p>
-      <a class="link-box" href="#about">About Me</a>
-      <a class="link-box" href="#projects">Projects</a>
-      <a class="link-box" href="#experience">Experience</a>
-      <a class="link-box" href="#resume">Resume</a>
-      <a class="link-box" href="#contact">Contact Me</a>
+      <button class="custom-button" onclick="scrollToId('about')">About Me</button>
+      <button class="custom-button" onclick="scrollToId('projects')">Projects</button>
+      <button class="custom-button" onclick="scrollToId('experience')">Experience</button>
+      <button class="custom-button" onclick="scrollToId('resume')">Resume</button>
+      <button class="custom-button" onclick="scrollToId('contact')">Contact Me</button>
     </div>
   </section>
-  <section class="bgcol2">
-    <div class="collapse_btns_div">
-      <button class="link-box collapse_btn" type="button" onclick="expandAllCollapsed()">Expand All</button>
-      <button class="link-box collapse_btn" type="button" onclick="hideAllCollapsed()">Hide All</button>
+  <section class="bgcol2 border-bottom topBar">
+    <div class="collapse-btns-div">
+      <button class="custom-button collapse-btn header-btn" typheader-btn="button" onclick="expandAllCollapsed()">Expand All</button>
+      <button class="custom-button collapse-btn header-btn" type="button" onclick="hideAllCollapsed()">Hide All</button>
+    </div>
+    <div class="menuBtn-wrapper">
+      <button class="custom-button header-btn" data-toggle="collapse" data-target="#menu" id="menuBtn" title="Open the menu">Menu</button>
     </div>
   </section>
 
 
-  <section class="bgcol1 border-top border-bottom">
+  <section class="bgcol1 border-bottom">
     <div class="contained hero">
       <h2 class="fw-light fc-b">My name is</h2>
       <h1 class="fw-semi-heavy fc-w">Brianna Milot</h1>
@@ -46,27 +48,38 @@
     </div>
   </section>
 
-  <div class="bgcol2">
-    <div class="contained">
-      <div id="accordion" style="color: white">
+  <div id="accordion" style="color: white">
+
+    <section id="about" class="bgcol2 border-bottom">
+      <div class="contained">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-              <button class="btn btn-link collapse_header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="collapse-header btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 About Me
               </button>
             </h5>
           </div>
           <div id="collapseOne" class="collapse multi-collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              <p class="fc-w">
+                About Me
+              </p>
+              <p class="fc-w">
+                More About Me
+              </p>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="about" class="bgcol1 border-bottom">
+      <div class="contained">
         <div class="card">
           <div class="card-header" id="headingTwo" >
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed collapse_header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="collapse-header btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Collapsible Group Item #2
               </button>
             </h5>
@@ -77,10 +90,15 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="about" class="bgcol2 border-bottom">
+      <div class="contained">
         <div class="card">
           <div class="card-header" id="headingThree">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed collapse_header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="collapse-header btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Collapsible Group Item #3
               </button>
             </h5>
@@ -93,25 +111,10 @@
         </div>
       </div>
     </div>
-  </div>
-
-
-  <section id="about" class="bgcol2 border-bottom">
-    <div class="contained">
-      <h3 class="fc-w">About me:</h3>
-      <div class="collapse multi-collapse" id="collapseAbout">
-        <p class="fc-w">
-          About Me
-        </p>
-
-        <p class="fc-w">
-          More About Me
-        </p>
-      </div>
-    </div>
   </section>
 
-  <section id="projects" class="bgcol4 border-bottom" style="background-color:#CC0000;">
+
+  <section id="projects" class="bgcol1 border-bottom">
     <div class="contained">
       <h3 class="fc-b">Pesonal Projects:</h3>
       <ul>

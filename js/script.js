@@ -93,3 +93,8 @@ function changeAllCollapsed(action) {
   $("#collapseThree").collapse(action);
   $("#collapseAbout").collapse(action);
 }
+
+function scrollToId(name) {
+  document.getElementById(name).scrollIntoView();
+  window.scrollBy(0, -70);
+}
