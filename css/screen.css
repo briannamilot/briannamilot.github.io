@@ -33,6 +33,7 @@ time, mark, audio, video {
   --btn-color: #393D3F;
   --btn-color-hover: #151617;
   --border-color: #393D3F;
+  --contact-icon-color: var(--bg2-background);
 }
 
 /* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
@@ -216,14 +217,24 @@ p {
 
 /* line 14, ../sass/classes/_bgcol.scss */
 .bgcol1 {
-  background-color: var(--bg1-background);
-  color: var(--bg1-text);
+  background-color: var(--bg1-background) !important;
+  color: var(--bg1-text) !important;
+}
+
+.bgcol1.div.h2 {
+  background-color: var(--bg1-background) !important;
+  color: var(--bg1-text) !important;
 }
 
 /* line 18, ../sass/classes/_bgcol.scss */
 .bgcol2 {
-  background-color: var(--bg2-background);
-  color: var(--bg2-text);
+  background-color: var(--bg2-background) !important;
+  color: var(--bg2-text) !important;
+}
+
+.bgcol2.div.h2 {
+  background-color: var(--bg2-background) !important;
+  color: var(--bg2-text) !important;
 }
 
 /* line 22, ../sass/classes/_bgcol.scss */
@@ -501,8 +512,15 @@ h6 {
 .contact-logo {
   height: 100px;
   width: 100px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: var(--contact-icon-color);
+  -webkit-mask-size: cover !important;
+  mask-size: cover !important;
+}
+
+.contact-links-wrapper {
+  display: flex;
+  margin: auto;
+  width: fit-content;
 }
 
 #topBtn {
@@ -523,18 +541,18 @@ h6 {
 }
 
 /* #menuBtn {
-  position: fixed;
-  top: 5px;
-  right: 5px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-  width: auto;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+position: fixed;
+top: 5px;
+right: 5px;
+z-index: 99;
+font-size: 18px;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 15px;
+border-radius: 4px;
+width: auto;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 } */
 
 .menuBtn-wrapper{

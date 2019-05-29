@@ -14,7 +14,7 @@
 <script src="js/script.js"></script>
 <link rel="icon" type="image/png" href="/images/icon.png" />
 </head>
-<body>
+<body style="height: 100%; background-color: var(--bg2-background)">
   <button class="custom-button" onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
   <section id="menu" class="collapse width">
     <div class="contained" style="color: white;  ">
@@ -40,9 +40,9 @@
 
   <section class="bgcol1 border-bottom">
     <div class="contained hero">
-      <h2 class="fw-light fc-b">My name is</h2>
+      <h2 class="fw-light fc-b" style="margin-top: 0;">My name is</h2>
       <h1 class="fw-semi-heavy fc-w">Brianna Milot</h1>
-      <h2 class="fw-light fc-b" style="font-size: 20pt;">
+      <h2 class="fw-light fc-b" style="font-size: 20pt; margin-bottom: 0;">
         Bio Line 1</br>Bio Line 2<br>
       </h2>
     </div>
@@ -74,13 +74,13 @@
       </div>
     </section>
 
-    <section id="about" class="bgcol1 border-bottom">
+    <section id="experience" class="bgcol1 border-bottom">
       <div class="contained">
         <div class="card">
           <div class="card-header" id="headingTwo" >
             <h5 class="mb-0">
               <button class="collapse-header btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Collapsible Group Item #2
+                Experience
               </button>
             </h5>
           </div>
@@ -93,19 +93,20 @@
       </div>
     </section>
 
-    <section id="about" class="bgcol2 border-bottom">
+    <section id="resume" class="bgcol2 border-bottom">
       <div class="contained">
         <div class="card">
           <div class="card-header" id="headingThree">
             <h5 class="mb-0">
               <button class="collapse-header btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Collapsible Group Item #3
+                Resume
               </button>
             </h5>
           </div>
           <div id="collapseThree" class="collapse multi-collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              <iframe class="resume_frame" src="https://drive.google.com/viewerng/viewer?url=briannamilot.com/images/Resume - Brianna Milot.pdf?pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%"></iframe>
+              <br>
             </div>
           </div>
         </div>
@@ -114,97 +115,88 @@
   </section>
 
 
-  <section id="projects" class="bgcol1 border-bottom">
-    <div class="contained">
-      <h3 class="fc-b">Pesonal Projects:</h3>
-      <ul>
-        <a class="project" target="_blank" href="https://github.com/queryapp/query-app" style="color: black">
-          <li class="text-center fc-b">
-            <div class="trusted" >
-              <img src="images/query_logo.svg" align="center" width="150" height="150"><br>
-              Query<br>
-              <p style="font-size: large;">A web app that bridges the gap between presenters and their audience by allowing users to post and vote on questions in real time, giving the presenter instant feedback and the best questions to answer.</p>
-              <p style="font-size: large; color: black;">Check out a demo at <a style="color: red;" href="http://www.queryme.io" target="_blank">queryme.io</a></p>
-            </div>
-          </li>
-        </a>
+  <!-- <section id="projects" class="bgcol1 border-bottom">
+  <div class="contained">
+  <h3 class="fc-b">Pesonal Projects</h3>
+  <ul>
+  <a class="project" target="_blank" href="https://github.com/queryapp/query-app" style="color: black">
+  <li class="text-center fc-b">
+  <div class="trusted" >
+  <img src="images/query_logo.svg" align="center" width="150" height="150"><br>
+  Query<br>
+  <p style="font-size: large;">A web app that bridges the gap between presenters and their audience by allowing users to post and vote on questions in real time, giving the presenter instant feedback and the best questions to answer.</p>
+  <p style="font-size: large; color: black;">Check out a demo at <a style="color: red;" href="http://www.queryme.io" target="_blank">queryme.io</a></p>
+</div>
+</li>
+</a>
 
 
-        <a class="project" target="_blank" href="https://github.com/nathanmilot/PasswordEncryptor">
-          <li class="text-center fc-b">
-            <div class="trusted" >
-              <br>
-              Password Encrypter<br>
-              <p style="font-size: large;">A user friendly C# application that provides a variety of encryption protocols for personal password encryption.</p>
-            </div>
-          </li>
-        </a>
+<a class="project" target="_blank" href="https://github.com/nathanmilot/PasswordEncryptor">
+<li class="text-center fc-b">
+<div class="trusted" >
+<br>
+Password Encrypter<br>
+<p style="font-size: large;">A user friendly C# application that provides a variety of encryption protocols for personal password encryption.</p>
+</div>
+</li>
+</a>
 
-        <a class="project" target="_blank" href="https://github.com/nathanmilot/Raffle">
-          <li class="text-center fc-b">
-            <div class="trusted" >
-              <br>
-              Raffle Application<br>
-              <p style="font-size: large;">An intuitive C# application for picking winners of a raffle.<br>Supports a variety of file formats (.csv, .tsv, and .txt) and raffle styles.</p>
-            </div>
-          </li>
-        </a>
-      </ul>
-    </div>
-  </section>
+<a class="project" target="_blank" href="https://github.com/nathanmilot/Raffle">
+<li class="text-center fc-b">
+<div class="trusted" >
+<br>
+Raffle Application<br>
+<p style="font-size: large;">An intuitive C# application for picking winners of a raffle.<br>Supports a variety of file formats (.csv, .tsv, and .txt) and raffle styles.</p>
+</div>
+</li>
+</a>
+</ul>
+</div>
+</section> -->
 
-  <section id="experience" class="bgcol4 border-bottom">
-    <div class="contained">
-      <h3 class="fc-b">Experience:</h3>
-      <ul>
-        <li class="text-center fc-b">
-          <div class="trusted">
-            <img src="images/google-logo.png" align="center" width="150" height="150"><br>
-            Google Software Engineer Intern<br>
-            <p style="font-size:large;">Improved the way some elements are rendered in Google Search and built an auto refactoring tool to help with migration to the new rendering path.</p>
-            May - Aug. 2018<br>
-          </div>
-        </li>
-        <br>
-        <li class="text-center fc-b">
-          <div class="trusted">
-            <img src="images/google-logo.png" align="center" width="150" height="150"><br>
-            Google Engineering Practicum Intern<br>
-            <p style="font-size:large;">Developed an internal email notification and unsubscription system that is currently used in production.</p>
-            May - Aug. 2017<br>
-          </div>
-        </li>
-        <br>
-      </ul>
-    </div>
-  </section>
+<!-- <section id="experience" class="bgcol4 border-bottom">
+<div class="contained">
+<h3 class="fc-b">Experience:</h3>
+<ul>
+<li class="text-center fc-b">
+<div class="trusted">
+<img src="images/google-logo.png" align="center" width="150" height="150"><br>
+Google Software Engineer Intern<br>
+<p style="font-size:large;">Improved the way some elements are rendered in Google Search and built an auto refactoring tool to help with migration to the new rendering path.</p>
+May - Aug. 2018<br>
+</div>
+</li>
+<br>
+<li class="text-center fc-b">
+<div class="trusted">
+<img src="images/google-logo.png" align="center" width="150" height="150"><br>
+Google Engineering Practicum Intern<br>
+<p style="font-size:large;">Developed an internal email notification and unsubscription system that is currently used in production.</p>
+May - Aug. 2017<br>
+</div>
+</li>
+<br>
+</ul>
+</div>
+</section> -->
 
-  <section id="resume" class="bgcol2 border-bottom">
-    <div class="contained">
-      <h3 class="fc-w">Resume:</h3>
-      <iframe class="resume_frame" src="https://drive.google.com/viewerng/viewer?url=nathanmilot.com/images/Resume - Nathan Milot.pdf?pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%"></iframe>
-      <br>
-    </div>
-  </section>
-
-  <section id="contact" class="bgcol1 border-bottom">
-    <div class="contained text-center fc-w">
-      <h2>Contact Me:</h2><br>
-      <a target="_blank" href="mailto:nathan.c.milot@gmail.com">
-        <img class="contact-logo"  src="images/mail_logo.svg">
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/in/nathanmilot">
-        <img class="contact-logo"  src="images/linkedin_logo.svg">
-      </a>
-      <a target="_blank" href="https://github.com/nathanmilot">
-        <img class="contact-logo" src="images/github_logo.svg">
-      </a>
-      <br>
-    </div>
-  </section>
-  <section class="bgcol2">
-    <div class="contained">
-    </div>
-  </section>
+<section id="contact" class="bgcol1 contained text-center fc-w border-bottom">
+  <h2>Contact Me</h2><br>
+  <div class="contact-links-wrapper">
+    <a target="_blank" href="mailto:brianna.milot@gmail.com">
+      <div class="contact-logo"  style="-webkit-mask: url(images/mail_logo.svg); mask: url(images/mail_logo.svg);"></div>
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/briannamilot">
+      <div class="contact-logo"  style="-webkit-mask: url(images/linkedin_logo.svg); mask: url(images/linkedin_logo.svg);"></div>
+    </a>
+    <!-- <a target="_blank" href="https://github.com/briannamilot">
+    <div class="contact-logo" style="-webkit-mask: url(images/github_logo.svg); mask: url(images/github_logo.svg);"></div>
+  </a> -->
+</div>
+</section>
+<section class="bgcol2">
+  <div class="contained">
+  </div>
+</section>
 </body>
 </html>

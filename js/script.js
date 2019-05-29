@@ -96,5 +96,5 @@ function changeAllCollapsed(action) {
 
 function scrollToId(name) {
   document.getElementById(name).scrollIntoView();
-  window.scrollBy(0, -70);
+  if(name != "contact") window.scrollBy(0, -70);
 }
