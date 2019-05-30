@@ -17,13 +17,13 @@
 <body style="height: 100%; background-color: var(--bg2-background)">
   <button class="custom-button" onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
   <section id="menu" class="collapse width">
-    <div class="contained" style="color: white;  ">
-      <button class="custom-button" onclick="topFunction()">Home</button>
-      <p style="text-align: center;">Sections</p>
+    <div class="menuBar" style="color: white;  ">
+      <button class="custom-button" onclick="topFunction()" style="">Home</button>
+      <!-- <p style="text-align: center;">Sections</p> -->
       <button class="custom-button" onclick="scrollToId('about')">About Me</button>
-      <button class="custom-button" onclick="scrollToId('projects')">Projects</button>
+      <!-- <button class="custom-button" onclick="scrollToId('projects')">Projects</button> -->
       <button class="custom-button" onclick="scrollToId('experience')">Experience</button>
-      <button class="custom-button" onclick="scrollToId('resume')">Resume</button>
+      <button class="custom-button" onclick="scrollToId('cv')">CV</button>
       <button class="custom-button" onclick="scrollToId('contact')">Contact Me</button>
     </div>
   </section>
@@ -55,12 +55,13 @@
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-              <button class="collapse-header btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="collapse-header btn btn-link" data-toggle="collapse" data-target="#about-collapse" aria-expanded="true" aria-controls="about-collapse" onclick="rotateArrow('about', this)">
                 About Me
               </button>
             </h5>
+            <div class="arrow" id="about-arrow">▼</div>
           </div>
-          <div id="collapseOne" class="collapse multi-collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div id="about-collapse" class="collapse multi-collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
               <p class="fc-w">
                 About Me
@@ -79,12 +80,13 @@
         <div class="card">
           <div class="card-header" id="headingTwo" >
             <h5 class="mb-0">
-              <button class="collapse-header btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="collapse-header btn btn-link collapsed" data-toggle="collapse" data-target="#experience-collapse" aria-expanded="false" aria-controls="experience-collapse" onclick="rotateArrow('experience', this)">
                 Experience
               </button>
             </h5>
+            <div class="arrow" id="experience-arrow">▼</div>
           </div>
-          <div id="collapseTwo" class="collapse multi-collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div id="experience-collapse" class="collapse multi-collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </div>
@@ -93,19 +95,20 @@
       </div>
     </section>
 
-    <section id="resume" class="bgcol2 border-bottom">
+    <section id="cv" class="bgcol2 border-bottom">
       <div class="contained">
         <div class="card">
           <div class="card-header" id="headingThree">
             <h5 class="mb-0">
-              <button class="collapse-header btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Resume
+              <button class="collapse-header btn btn-link collapsed" data-toggle="collapse" data-target="#cv-collapse" aria-expanded="false" aria-controls="cv-collapse" onclick="rotateArrow('cv', this)">
+                Curriculum Vitae
               </button>
             </h5>
+            <div class="arrow" id="cv-arrow">▼</div>
           </div>
-          <div id="collapseThree" class="collapse multi-collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div id="cv-collapse" class="collapse multi-collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body">
-              <iframe class="resume_frame" src="https://drive.google.com/viewerng/viewer?url=briannamilot.com/images/Resume - Brianna Milot.pdf?pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%"></iframe>
+              <iframe class="resume_frame" src="https://drive.google.com/viewerng/viewer?url=briannamilot.com/images/CV - Brianna Milot.pdf?pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%"></iframe>
               <br>
             </div>
           </div>

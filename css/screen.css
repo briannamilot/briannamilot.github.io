@@ -26,6 +26,12 @@ time, mark, audio, video {
 }
 
 :root {
+  --custom-dark: #393D3F;
+  --custom-deep: #244361;
+  --custom-medium: #006E90;
+  --custom-fair: #679EAF;
+  --custom-light: #ADCAD6;
+
   --bg1-background: #ADCAD6;
   --bg1-text: #393D3F;
   --bg2-background: #006E90;
@@ -34,6 +40,7 @@ time, mark, audio, video {
   --btn-color-hover: #151617;
   --border-color: #393D3F;
   --contact-icon-color: var(--bg2-background);
+  --scrollbar-color: var(--custom-dark);
 }
 
 /* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
@@ -219,17 +226,21 @@ p {
 .bgcol1 {
   background-color: var(--bg1-background) !important;
   color: var(--bg1-text) !important;
+  width: calc(100% + 20px);
 }
 
-.bgcol1.div.h2 {
+.bgcol1 h2 {
   background-color: var(--bg1-background) !important;
   color: var(--bg1-text) !important;
+  font-weight: bold !important;
+  font-size: 24px !important;
 }
 
 /* line 18, ../sass/classes/_bgcol.scss */
 .bgcol2 {
   background-color: var(--bg2-background) !important;
   color: var(--bg2-text) !important;
+  width: calc(100% + 20px);
 }
 
 .bgcol2.div.h2 {
@@ -496,12 +507,13 @@ h6 {
   padding: 5px 5px;
   display: inline-block;
   border-radius: 0.5em;
-  margin-right: 5px;
   margin-bottom: 5px;
   width: 100px;
   border: none;
   outline: none;
   height: 50px;
+  font-size: 16px !important;
+  font-weight: 600 !important;
 }
 
 .custom-button:hover, .custom-button:active {
@@ -555,6 +567,12 @@ width: auto;
 box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 } */
 
+.menuBar {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
 .menuBtn-wrapper{
   padding-right: 10px;
   align-items: flex-end;
@@ -564,13 +582,15 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 
 #menu {
   position: fixed;
-  right: 0px;
+  right: -20px;
   top: 0px;
   background-color: var(--bg2-background);
-  width: 175px;
   height: -webkit-fill-available;
   z-index: 10000;
   border-left: solid var(--border-color) 3px;
+  padding: 10px;
+  width: fit-content;
+  padding-right: 30px;
 }
 
 .collapse-btns-div {
@@ -607,7 +627,8 @@ top: 2px;
   position: sticky;
   display: flex;
   top: 0px;
-  width: 100%;
+  width: calc(100% + 20px);
+  padding-right: 20px;
   height: 70px;
 }
 
@@ -615,4 +636,51 @@ top: 2px;
   height: 50px;
   position: relative;
   margin: auto;
+}
+
+.card-header {
+  display: flex;
+}
+
+.card-body {
+  padding-right: 20px;
+}
+
+.arrow {
+  width: fit-content;
+  /* color: black; */
+  font-size: x-large;
+  margin: auto 0 auto 0;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.btn-link {
+  padding-right: 0px !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 20px 20px transparent;
+  /* border: solid 4px transparent; */
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 20px 20px var(--scrollbar-color);
+  border: solid 2px transparent;
+  border-radius: 1em;
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {
+  display: none;
 }
