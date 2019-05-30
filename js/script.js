@@ -106,7 +106,7 @@ function scrollToId(name) {
     setTimeout(function(){
       document.getElementById(name).scrollIntoView();
       if(name != "contact") window.scrollBy(0, -70);
-    }, 275);
+    }, 300);
   } else {
     document.getElementById(name).scrollIntoView();
     if(name != "contact") window.scrollBy(0, -70);
