@@ -613,7 +613,7 @@ top: 2px;
 
 .collapse-header {
   color: inherit !important;
-  font-size: x-large !important;
+  font-size: xx-large !important;
   font-weight: bold !important;
   padding-left: 0 !important;
 }
@@ -654,6 +654,10 @@ top: 2px;
 
 .btn-link {
   padding-right: 0px !important;
+}
+
+.detail {
+  font-size: x-large;
 }
 
 body {
